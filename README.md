@@ -1,2 +1,2 @@
 # Timer
-Timer-Khubaib.surge.sh
+Timer.Khubaib.surge.sh
