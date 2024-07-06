@@ -10,6 +10,7 @@ let interval = null;
 
 start.addEventListener("click", () => {
   clearInterval(interval);
+
   let totalSeconds =
     Number(hour.value) * 3600 +
     Number(minute.value) * 60 +
@@ -40,9 +41,10 @@ start.addEventListener("click", () => {
       hour.value = "00";
       minute.value = "00";
       second.value = "00";
-      disp.innerText = "Time over";
+      disp.innerHTML = "Time over";
     }
   }, 1000);
+  disp.innerHTML = "Timer Started";
 });
 
 reset.addEventListener("click", () => {
@@ -50,5 +52,5 @@ reset.addEventListener("click", () => {
   hour.value = "";
   minute.value = "";
   second.value = "";
-  disp.innerText = "Timer";
+  disp.innerHTML = "Timer Reseted";
 });
